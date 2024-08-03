@@ -13,3 +13,16 @@
 **Tip** *Use `pip install --no-deps -e .` to resolve package conflicts.*
 
 - test the installation `llamafactory-cli help`
+
+**Tip** *Remove packages in root environment*
+
+        for package in $(conda list --name base | awk '{print $1}' | tail -n +4)
+        do
+        conda remove -n base --yes $package
+        done
+
+- Initialize Conda (if necessary): `conda init bash`
+
+- Activate conda `conda activate`
+
+- Clean up unused packages and cache: `conda clean --all`
