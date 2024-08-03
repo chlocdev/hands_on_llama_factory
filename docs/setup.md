@@ -1,6 +1,6 @@
 # setup
 
-- create conda virtual environment: `conda create -n <your_virtual_environment_name>`
+- create conda virtual environment: `conda create -n <your_virtual_environment_name> python=3.8`
 
 - installation [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory): 
 
